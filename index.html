@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
@@ -256,9 +257,11 @@
                     Let's discuss your project!</h1>
                 <p>We're here to collaborate and turn your vision into reality. Whether you're in the planning phase or
                     ready to start.</p>
-
-                <button class="btn-box3">Let's work Together<img src="./images/right arrow.svg" alt="images"
-                        style="width: 25px; height: 25px;"></button>
+                <button class="active">
+                    Let’s work together
+                    <a><i class="fas fa-arrow-right"></i></a>
+                </button>
+                </button>
             </div>
         </section>
         <section class="max-width">
@@ -408,10 +411,11 @@
                     </div>
                 </div>
             </div>
+
+
             <div class="max-width flex child-section project-box">
 
-
-                <div class="project-para">
+                <div class="project-para project-text ">
                     <h3>Let’s discuss your Project</h3>
                     <p>Have a vision in mind? Let's work together to turn it into reality.</p>
                     <div class="info-box">
@@ -441,24 +445,45 @@
                 </div>
 
 
-                <div class="project-text">
-                    <p>Ready to start your project? Fill out the details below:</p>
+                <section class="second-section flex-column ">
+                    <p>There are many variations of passages of Lorem Ipsu available,
+                        but the majority have suffered alte.
+                    </p>
 
-                    <div>
-                        <h5>Name*</h5>
-                        <div class="line"></div>
-                        <h5>Email*</h5>
-                        <div class="line"></div>
-                        <h5>Location</h5>
-                        <div class="line"></div>
-                        <h5>Budget*</h5>
-                        <div class="line"></div>
-                        <h5>Message*</h5>
-                        <div class="line"></div>
+                    <form method="post" action="">
 
-                    </div>
-                </div>
-            </div>
+                        <div class="input-group">
+                            <input type="text" id="Name" placeholder="Name" required>
+                            <label for="name">Name*</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" id="email" placeholder="Email" required>
+                            <label for="email">Email*</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" id="location" placeholder="Location" required>
+                            <label for="location">Location*</label>
+                        </div>
+                        <div class="input-two">
+                            <div class="input-group">
+                                <input type="number" id="budget" placeholder="Budget" required>
+                                <label for="budget">Budget*</label>
+                            </div>
+
+                            <div class="input-group">
+                                <input type="text" id="subject" placeholder="Subject" required>
+                                <label for="subject">Subject*</label>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" id="message" placeholder="Message" required>
+                            <label for="Message">Message*</label>
+                        </div>
+
+                    </form>
+                    <button class="active-btn">Submit <a><i class="fa fas fa-paper-plane"></i></a></button>
+                </section>
+
         </section>
         <section class="footer">
             <nav class="footer-nav max-width flex">
